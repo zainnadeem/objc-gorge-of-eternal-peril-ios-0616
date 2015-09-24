@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2FEE473E93A0278C4542EB8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FA6E2D77B84E3E25CA87ED /* Images.xcassets */; };
 		58106D2FB115055B198641C3 /* LaunchScreen.xib in Sources */ = {isa = PBXBuildFile; fileRef = 776880467863C7AAF0D06E79 /* LaunchScreen.xib */; };
-		5F1ACB80945053AAB0874062 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = D792043A4650074E8255D2F6 /* Main.storyboard */; };
+		5F1ACB80945053AAB0874062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D792043A4650074E8255D2F6 /* Main.storyboard */; };
 		624C47F1706511F1509A7186 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E69B6CADA73CE4E764168E /* main.m */; };
 		64D982F89915650AEC26549A /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66339921759DAD2F7D7F893E /* libPods-unit_tests.a */; };
 		CD49CA36AAB99A0E196D6F38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3A8B0597882EAFC8959DD8 /* Foundation.framework */; };
@@ -217,7 +217,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = FIS;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "The Flatiron School";
 			};
 			buildConfigurationList = 75B10A0B56A61A8FC332F20B /* Build configuration list for PBXProject "objc-gorge-of-eternal-peril" */;
@@ -251,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FEE473E93A0278C4542EB8A /* Images.xcassets in Resources */,
+				5F1ACB80945053AAB0874062 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +296,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDE6645F645D2C2073C0ACBF /* FISAppDelegate.m in Sources */,
-				5F1ACB80945053AAB0874062 /* Main.storyboard in Sources */,
 				58106D2FB115055B198641C3 /* LaunchScreen.xib in Sources */,
 				624C47F1706511F1509A7186 /* main.m in Sources */,
 			);
@@ -337,6 +337,7 @@
 				INFOPLIST_FILE = "objc-gorge-of-eternal-peril/Resources/Other-Sources/objc-gorge-of-eternal-peril-Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -355,6 +356,7 @@
 				);
 				GCC_PREFIX_HEADER = "UnitTests/Resources/UnitTests-Prefix.pch";
 				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -430,6 +432,7 @@
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"$(inherited)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -459,6 +462,7 @@
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -503,6 +507,7 @@
 				);
 				GCC_PREFIX_HEADER = "UnitTests/Resources/UnitTests-Prefix.pch";
 				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
