@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UaL-e0-RV9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MYW-8X-uVF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHY-DB-CZe">
-                                <rect key="frame" x="62" y="319" width="251" height="37"/>
-                                <state key="normal" title="Ask me the questions, Bridgekeeper."/>
-                                <connections>
-                                    <segue destination="Ly1-gk-aAc" kind="show" id="n4V-Tq-Oyp"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who would cross the Bridge of Death must answer me these questions three, ere the other side he see." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9D-cd-joP">
                                 <rect key="frame" x="20" y="136" width="335" height="96"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -47,6 +40,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHY-DB-CZe">
+                                <rect key="frame" x="62" y="304" width="251" height="37"/>
+                                <state key="normal" title="Ask me the questions, Bridgekeeper."/>
+                                <connections>
+                                    <segue destination="Ly1-gk-aAc" kind="show" id="WJu-hG-A8L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -60,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2788.5" y="264.5"/>
+            <point key="canvasLocation" x="3600.5" y="264.5"/>
         </scene>
         <!--What is your name?-->
         <scene sceneID="Sj6-he-CWj">
@@ -78,7 +78,7 @@
                                 <rect key="frame" x="115" y="319" width="165" height="30"/>
                                 <state key="normal" title="Sir Lancelot of Camelot."/>
                                 <connections>
-                                    <segue destination="rAr-8s-S62" kind="show" id="pax-aB-4H6"/>
+                                    <segue destination="rAr-8s-S62" kind="show" id="HMk-Xc-Svr"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your name?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cX1-1H-zme">
@@ -95,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdn-2f-a0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3267.5" y="264.5"/>
+            <point key="canvasLocation" x="4079.5" y="264.5"/>
         </scene>
         <!--What is your quest?-->
         <scene sceneID="3KP-Po-vGW">
@@ -113,7 +113,7 @@
                                 <rect key="frame" x="116" y="319" width="142" height="30"/>
                                 <state key="normal" title="I seek the Holy Grail."/>
                                 <connections>
-                                    <segue destination="za4-60-z2A" kind="show" id="Ez4-sy-QeF"/>
+                                    <segue destination="za4-60-z2A" kind="show" id="qjX-li-Eld"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your quest?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCh-zb-CIN">
@@ -130,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PuP-ne-NHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3759.5" y="264.5"/>
+            <point key="canvasLocation" x="4571.5" y="264.5"/>
         </scene>
         <!--Gorge Of Eternal Peril View Controller-->
         <scene sceneID="8ng-5x-gLI">
@@ -156,11 +156,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGS-wi-SK9">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-h9-h4p">
                                 <rect key="frame" x="128" y="319" width="118" height="30"/>
                                 <state key="normal" title="Accept your fate."/>
                                 <connections>
-                                    <action selector="acceptYourFateTapped:" destination="pwh-Zw-Z4U" eventType="touchUpInside" id="Xvw-kZ-9pE"/>
+                                    <action selector="acceptYourFateTapped:" destination="pwh-Zw-Z4U" eventType="touchUpInside" id="oSr-3R-sfo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -170,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i0C-Tg-QHJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3440.5" y="-528.5"/>
+            <point key="canvasLocation" x="5064.5" y="-567.5"/>
         </scene>
         <!--What is your favourite colour?-->
         <scene sceneID="CcD-gR-axr">
@@ -188,14 +188,14 @@
                                 <rect key="frame" x="111" y="319" width="35" height="30"/>
                                 <state key="normal" title="Blue."/>
                                 <connections>
-                                    <segue destination="69M-uE-5Gg" kind="show" id="IYS-be-asl"/>
+                                    <segue destination="69M-uE-5Gg" kind="show" id="ste-fb-NW8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWe-gX-ng2">
                                 <rect key="frame" x="207" y="319" width="47" height="30"/>
                                 <state key="normal" title="Yellow."/>
                                 <connections>
-                                    <segue destination="pwh-Zw-Z4U" kind="presentation" id="py4-xf-6JZ"/>
+                                    <segue destination="pwh-Zw-Z4U" kind="presentation" id="7Sd-eS-ysf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your favourite colour?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ff0-G6-f0k">
@@ -211,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="84i-M7-uzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4252.5" y="264.5"/>
+            <point key="canvasLocation" x="5064.5" y="264.5"/>
         </scene>
         <!--Go on. Off you go.-->
         <scene sceneID="Xp3-xq-NoC">
@@ -244,26 +244,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1t-s6-dbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4761.5" y="264.5"/>
+            <point key="canvasLocation" x="5573.5" y="264.5"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="dBv-HE-Nhn">
+        <scene sceneID="Icx-DZ-gKr">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UaL-e0-RV9" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MYW-8X-uVF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zVf-mn-5p5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Xe-nK-eCX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="f0p-sN-AqT"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="HFK-z8-WBN"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gRh-2Y-SER" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqN-vG-h6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1976" y="264"/>
+            <point key="canvasLocation" x="3087.5" y="264.5"/>
         </scene>
     </scenes>
 </document>
