@@ -103,7 +103,7 @@ Run the program again with `⌘` `R`. Click through the stack of view controller
 
 ![](https://curriculum-content.s3.amazonaws.com/ios-segues-and-nav-controllers-unit/gorge_final.png)
 
-Now you're a king of segues:
+Now you're a monarch of segues:
 
 ![](https://curriculum-content.s3.amazonaws.com/ios-segues-and-nav-controllers-unit/how_do_you_know_segues_meme.jpeg)
 
