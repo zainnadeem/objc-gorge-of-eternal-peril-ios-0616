@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MYW-8X-uVF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -48,6 +48,9 @@
                                 <rect key="frame" x="62" y="304" width="251" height="37"/>
                                 <animations/>
                                 <state key="normal" title="Ask me the questions, Bridgekeeper."/>
+                                <connections>
+                                    <segue destination="Ly1-gk-aAc" kind="show" id="WJu-hG-A8L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -81,6 +84,9 @@
                                 <rect key="frame" x="115" y="319" width="165" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Sir Lancelot of Camelot."/>
+                                <connections>
+                                    <segue destination="rAr-8s-S62" kind="show" id="HMk-Xc-Svr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your name?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cX1-1H-zme">
                                 <rect key="frame" x="75" y="143" width="224" height="60"/>
@@ -116,6 +122,9 @@
                                 <rect key="frame" x="116" y="319" width="142" height="30"/>
                                 <animations/>
                                 <state key="normal" title="I seek the Holy Grail."/>
+                                <connections>
+                                    <segue destination="za4-60-z2A" kind="show" id="qjX-li-Eld"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your quest?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCh-zb-CIN">
                                 <rect key="frame" x="76" y="141" width="224" height="60"/>
@@ -165,6 +174,9 @@
                                 <rect key="frame" x="128" y="319" width="118" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Accept your fate."/>
+                                <connections>
+                                    <action selector="acceptYourFateTapped:" destination="pwh-Zw-Z4U" eventType="touchUpInside" id="oSr-3R-sfo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -192,11 +204,17 @@
                                 <rect key="frame" x="111" y="319" width="35" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Blue."/>
+                                <connections>
+                                    <segue destination="69M-uE-5Gg" kind="show" id="ste-fb-NW8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWe-gX-ng2">
                                 <rect key="frame" x="207" y="319" width="47" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Yellow."/>
+                                <connections>
+                                    <segue destination="pwh-Zw-Z4U" kind="presentation" id="7Sd-eS-ysf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your favourite colour?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ff0-G6-f0k">
                                 <rect key="frame" x="29" y="136" width="317" height="60"/>
@@ -250,6 +268,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1t-s6-dbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5573.5" y="264.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Icx-DZ-gKr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MYW-8X-uVF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Xe-nK-eCX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="HFK-z8-WBN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqN-vG-h6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3087.5" y="264.5"/>
         </scene>
     </scenes>
 </document>
