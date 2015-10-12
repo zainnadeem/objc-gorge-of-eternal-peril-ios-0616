@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2FEE473E93A0278C4542EB8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FA6E2D77B84E3E25CA87ED /* Images.xcassets */; };
+		4D83B36F1BB4913A00A36DC8 /* FISGorgeOfEternalPerilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D83B36E1BB4913A00A36DC8 /* FISGorgeOfEternalPerilViewController.m */; };
 		58106D2FB115055B198641C3 /* LaunchScreen.xib in Sources */ = {isa = PBXBuildFile; fileRef = 776880467863C7AAF0D06E79 /* LaunchScreen.xib */; };
 		5F1ACB80945053AAB0874062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D792043A4650074E8255D2F6 /* Main.storyboard */; };
 		624C47F1706511F1509A7186 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E69B6CADA73CE4E764168E /* main.m */; };
@@ -31,6 +32,8 @@
 		24FA6E2D77B84E3E25CA87ED /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		38D6C374144A3D34EDC2626A /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E69B6CADA73CE4E764168E /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D83B36D1BB4913A00A36DC8 /* FISGorgeOfEternalPerilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FISGorgeOfEternalPerilViewController.h; path = ../FISGorgeOfEternalPerilViewController.h; sourceTree = "<group>"; };
+		4D83B36E1BB4913A00A36DC8 /* FISGorgeOfEternalPerilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FISGorgeOfEternalPerilViewController.m; path = ../FISGorgeOfEternalPerilViewController.m; sourceTree = "<group>"; };
 		59184B741F1B02FD777538D0 /* Pods-unit_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DF0A394B3943B7E302C397B /* objc-gorge-of-eternal-peril.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "objc-gorge-of-eternal-peril.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66339921759DAD2F7D7F893E /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +148,8 @@
 			children = (
 				DD4F14257E814E10563BE574 /* FISAppDelegate.h */,
 				A6A27128DDB8856C39D6A112 /* FISAppDelegate.m */,
+				4D83B36D1BB4913A00A36DC8 /* FISGorgeOfEternalPerilViewController.h */,
+				4D83B36E1BB4913A00A36DC8 /* FISGorgeOfEternalPerilViewController.m */,
 				D792043A4650074E8255D2F6 /* Main.storyboard */,
 				7145BD26A2FF6B70AEC214FC /* Resources */,
 			);
@@ -217,6 +222,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = FIS;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "The Flatiron School";
 			};
@@ -297,6 +303,7 @@
 			files = (
 				FDE6645F645D2C2073C0ACBF /* FISAppDelegate.m in Sources */,
 				58106D2FB115055B198641C3 /* LaunchScreen.xib in Sources */,
+				4D83B36F1BB4913A00A36DC8 /* FISGorgeOfEternalPerilViewController.m in Sources */,
 				624C47F1706511F1509A7186 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -336,11 +344,13 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "objc-gorge-of-eternal-peril/Resources/Other-Sources/objc-gorge-of-eternal-peril-Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -417,12 +427,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "objc-gorge-of-eternal-peril/Resources/Other-Sources/objc-gorge-of-eternal-peril-Prefix.pch";
 				INFOPLIST_FILE = "objc-gorge-of-eternal-peril/Resources/Other-Sources/objc-gorge-of-eternal-peril-Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
