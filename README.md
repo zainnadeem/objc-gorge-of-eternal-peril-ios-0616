@@ -11,7 +11,7 @@
 
 To allow your user to navigate between view controllers, a path between them called a **segue** (pronounced "seg-way") can be created in your storyboard. Of the segues in Interface Builder, the most commonly used are the *show* segue and the *present modally* segue.
 
-Outside the context of a navigation controller, these two segues function identically -- they both present the destination view controller modally. A **modal** is a view that is presented at the very front of the user interface, thereby temporarily blocking interation with the rest of the app. [Apple's Human Interface Guidelines](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/Modal.html#//apple_ref/doc/uid/TP40006556-CH64-SW1) suggest that modals are only appropriate when getting the user's attention or completing a short, self-contained task.
+Outside the context of a navigation controller, these two segues function identically -- they both present the destination view controller modally. A **modal** is a view that is presented at the very front of the user interface, thereby temporarily blocking interaction with the rest of the app. [Apple's Human Interface Guidelines](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/Modal.html#//apple_ref/doc/uid/TP40006556-CH64-SW1) suggest that modals are only appropriate when getting the user's attention or completing a short, self-contained task.
 
 For sections of your app or longer-lived tasks, iOS provides a few non-modal ways to link together view controllers. The simplest of those is a `UINavigationController`.
 
