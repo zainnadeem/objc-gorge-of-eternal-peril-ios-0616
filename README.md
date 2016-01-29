@@ -110,4 +110,4 @@ Now you're a monarch of segues:
 
 
 
-<a href='https://learn.co/lessons/objc-gorge-of-eternal-peril' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/objc-gorge-of-eternal-peril' title='The Gorge of Eternal Peril'>The Gorge of Eternal Peril</a> on Learn.co and start learning to code for free.</p>
